@@ -31,6 +31,7 @@
     "email": "davide@mono.studio"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "npx tsc -b",
     "format": "prettier --write \"src/**/*.ts\""
   },
