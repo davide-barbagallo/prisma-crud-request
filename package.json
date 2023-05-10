@@ -1,26 +1,13 @@
 {
-  "name": "@nestjsx/crud-request",
-  "description": "NestJs CRUD for RESTful APIs - request query builder",
-  "version": "5.0.0-alpha.3",
+  "name": "@mono/prisma-crud-request",
+  "description": "NestJs CRUD for RESTful APIs - request query builder for Prisma ORM",
+  "version": "0.1.0",
   "license": "MIT",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nestjsx/crud.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nestjsx/crud/issues"
-  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "keywords": [
     "typescript",
-    "typeorm",
+    "prisma",
     "nest",
     "nestjs",
     "rest",
@@ -40,14 +27,19 @@
     "querybuilder"
   ],
   "author": {
-    "name": "Michael Yali",
-    "email": "mihon4ik@gmail.com"
+    "name": "Davide Barbagallo",
+    "email": "davide@mono.studio"
   },
   "scripts": {
-    "build": "npx tsc -b"
+    "build": "npx tsc -b",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
     "@nestjsx/util": "^5.0.0-alpha.3",
-    "qs": "^6.10.3"
+    "qs": "^6.10.3",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
